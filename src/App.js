@@ -1,26 +1,47 @@
+import axios from 'axios';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Message from './components/Message.js';
+
+const API = 'https://randomuser.me/api?results=10';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userData: [],
+    };
+  }
+  componentDidMount() {
+    axios.get(API)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ userData: res.data.results });
+      });
+  }
+
+  render() {
+    const { userData } = this.state;
+    return (
+      <div className='App'>
+        {userData.map(({ name, picture, location, id }, index) => {
+          return (
+            <Message
+              // give away props
+              name={`${name.first} ${name.last}`}
+              logo={picture.thumbnail}
+              title={location.country}
+              text={location.city}
+              key={id.value}
+            />
+          );
+        })}
+
+      </div>
+    );
+  }
+
 }
 
 export default App;
