@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This demo-project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Для создания запросов к серверу используется пакет axios.
+
+Запросы осуществляются к API = 'https://randomuser.me/api?results=10',
+после чего полученные данные отображаются на странице приложения.
+
 
 ## Available Scripts
 
