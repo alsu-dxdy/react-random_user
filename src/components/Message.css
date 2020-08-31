@@ -1,0 +1,81 @@
+.message {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    width: 576px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.message-header {
+    display: flex;
+}
+
+.message-header-image {
+    display: inline-block;
+    vertical-align: middle;
+    height: 64px;
+    width: 64px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.message-header-title {
+    color: #5cb85c;
+    text-decoration: none;
+    line-height: 20px;
+    text-align: left;
+}
+
+.message-header-date {}
+
+.message-body-title {
+    margin: 0;
+    text-align: left;
+}
+
+.message-body-content {
+    margin: 0;
+    text-align: left;
+}
+
+.message-header-counter {
+    margin: 0;
+    text-align: left;
+}
+
+.message-header-button {
+    width: 30%;
+}
+
+/* .place-card__like-icon { */
+
+.message-header-button {
+    background: url(../images/like-inactive.svg) center no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 21px;
+    height: 19px;
+    cursor: pointer;
+    transition: transform .3s linear;
+    margin-bottom: 3px;
+}
+
+.message-header-button_active {
+    background-image: url(../images/like-active.svg);
+}
+
+.place-card__like-icon:hover {
+    transform: scale(1.03);
+}
+
+.place-card__count {
+    /*border: 1px solid red;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    margin: 0;
+    width: 10px;
+}

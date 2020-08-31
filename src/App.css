@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -20,4 +20,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  width: 30%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation-link {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation-link:hover {
+  text-decoration: underline;
 }
