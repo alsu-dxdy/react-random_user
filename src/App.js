@@ -15,6 +15,7 @@ const API = 'https://randomuser.me/api?results=10';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    
     this.state = {
       userData: [],
     };
@@ -23,6 +24,7 @@ class App extends React.Component {
     axios.get(API)
       .then(res => {
         console.log(res.data);
+        // обновляем состояние приложения после получения данных:
         this.setState({ userData: res.data.results });
       });
   }
