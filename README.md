@@ -1,5 +1,7 @@
 This demo-project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+https://alsu-dxdy.github.io/react-random_user
+
 Для создания запросов к серверу используется пакет axios.
 
 Запросы осуществляются к API = 'https://randomuser.me/api?results=10',
