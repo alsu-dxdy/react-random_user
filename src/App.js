@@ -15,7 +15,7 @@ const API = 'https://randomuser.me/api?results=10';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       userData: [],
     };
@@ -68,8 +68,12 @@ class App extends React.Component {
               })}
             </div>
           </Route>
-          <Route path="/hello">Hello</Route>
-          <Route path="/signin">I am registrator</Route>
+          <Route path="/hello">
+            <p className='App__text'>Hello</p>
+          </Route>
+          <Route path="/signin">
+            <p className='App__text'>I am registrator</p>
+          </Route>
         </Switch>
 
       </Router >
