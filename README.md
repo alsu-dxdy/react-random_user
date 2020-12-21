@@ -1,4 +1,12 @@
-This demo-project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  Redux-sport
+
+### Описание проекта:
+В данном проекте создается приложение для учета спортивных тренировок. 
+
+### Стек проекта:
+- React
+-   BrowserRouter,  Switch,  Route,  Link
+
 
 https://alsu-dxdy.github.io/react-random_user
 
